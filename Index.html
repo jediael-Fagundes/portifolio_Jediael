@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jediael Fagundes - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER AZUL -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Jediael Fagundes</h1>
+            <nav class="nav">
+                <a href="#sobre">Sobre mim</a>
+                <a href="#formacao">Formação</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="content">
+            <!-- SOBRE MIM -->
+            <article id="sobre" class="post">
+                <h2>Sobre mim</h2>
+                <p class="date">Apresentação pessoal</p>
+                <p>
+                    Meu nome é Jediael da Silva Fagundes. Sou desenvolvedor apaixonado por tecnologia e inovação. 
+                    Atualmente cursando Análise e Desenvolvimento de Sistemas com formação técnica em Desenvolvimento 
+                    de Sistemas pelo SENAI.
+                </p>
+                <p>
+                    Gosto de tocar violão, jogar videogame e acompanhar as últimas tendências em tecnologia. 
+                    Busco sempre aprender novas tecnologias e criar soluções que façam diferença.
+                </p>
+            </article>
+
+            <!-- FORMAÇÃO -->
+            <article id="formacao" class="post">
+                <h2>Formação</h2>
+                <p class="date">Educação e cursos</p>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>Cursando (2024 - 2026)</p>
+                <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                <p>SENAI - Concluído</p>
+                <h3>Idiomas</h3>
+                <p>Português - Nativo</p>
+            </article>
+
+            <!-- PORTFÓLIO -->
+            <article id="portfolio" class="post">
+                <h2>Portfólio</h2>
+                <p class="date">Meus projetos</p>
+                <h3>eMatch</h3>
+                <p>Aplicativo desenvolvido como TCC. Plataforma para marcação e organização de eventos de jogos.</p>
+                <p><strong>Tecnologias:</strong> Mobile, Desenvolvimento de Aplicações</p>
+                <h3>Portfólio Web</h3>
+                <p>Portfólio responsivo com HTML5, CSS3 e JavaScript puro. Inclui validação de formulário.</p>
+                <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
+            </article>
+
+            <!-- CONTATO -->
+            <article id="contato" class="post">
+                <h2>Contato</h2>
+                <p class="date">Deixe sua mensagem</p>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <span class="error" id="nomeError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <span class="error" id="mensagemError"></span>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+                <div id="successMsg" class="success" style="display: none;">
+                    ✓ Mensagem enviada com sucesso!
+                </div>
+            </article>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Sobre</h3>
+                <p>Desenvolvedor apaixonado por tecnologia. Sempre buscando aprender e criar soluções inovadoras.</p>
+            </div>
+            <div class="widget">
+                <h3>Interesses</h3>
+                <ul>
+                    <li>Tocar Violão</li>
+                    <li>Videogame</li>
+                    <li>Tecnologia</li>
+                    <li>Desenvolvimento</li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Contato</h3>
+                <p><a href="mailto:seu.email@exemplo.com">jedyfagundes@gmail.com</a></p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Jediael da Silva Fagundes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
